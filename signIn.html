@@ -5,24 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Armazon Login</title>
         <link rel="icon" href="img/icon.jpg">
+        <link rel="stylesheet" href="style.css">
         <style>
-
-            body{
-                margin: 0;
-            }
 
             .full_page{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-items: center;
                 height: 700px;
             }
 
             .full_page .logo_in img{
                 display: flex;
-                height: 150px;
+                height: 90px;
                 width: 150px;
-                margin-bottom: 5px;
+                margin-bottom: 15px;
+                margin-top: -200px;
             }
 
             form{
@@ -64,20 +63,48 @@
 
         <div class="full_page">
             <div class="logo_in">
-                <img src="img/armazon.jpg" alt="">
+                <a href="index.html"><img src="img/armazon.jpg" alt=""></a>
             </div>
 
             <form class="information" action="" method="post">
                 <label>Sign in</label>
                 <input type="email" name="email" placeholder="Email" required autofocus>
                 <br>
-                <input type="password" name="Password" placeholder="Password" required>
+                <input class="password" type="password" name="Password" placeholder="Password" required>
                 <br>
-                <button type="submit">Login</button>
+                <button type="submit" class="submit">Login</button>
 
             </form>
 
            
         </div>
+
+
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img src="img/icon.jpg" alt="">
+                    <h2>عن المتجر</h2>
+                    <p>متجر ملابس يقدم أحدث التصاميم العصرية بجودة عالية وأسعار مناسبة.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>روابط سريعة</h2>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">المنتجات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>تواصل معنا</h2>
+                    <p>storecras@gmail.com : البريد الإلكتروني</p>
+                    <p>الهاتف: 123-456-789</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=61556889610648" target="_blank"><i class="fa-brands fa-facebook"></i>facebook</a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i>instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 جميع الحقوق محفوظة | متجر الملابس</p>
+        </footer>
     </body>
 </html>
